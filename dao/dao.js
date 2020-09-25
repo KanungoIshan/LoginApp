@@ -6,7 +6,4 @@ const session = driver.session();
 
 const cypher = "MATCH (p:Users) RETURN p";
 
-exports.fetchUsers = () =>{
-   
-    return session.run(cypher)
-}
+exports.fetchUsers = () => session.run(cypher);
